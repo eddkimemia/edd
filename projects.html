@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Edwin Kimemia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Newsreader:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead" role="banner">
+    <div class="masthead-rule"></div>
+    <div class="masthead-inner">
+      <div class="masthead-left">
+        Nairobi, Kenya<br>
+        Available for hire
+      </div>
+      <h1 class="masthead-title">
+        Edwin <span>Kimemia</span>
+      </h1>
+      <div class="masthead-right">
+        Software Engineer<br>
+        3 yrs · Full-Stack
+      </div>
+    </div>
+    <div class="masthead-sub">
+      <span class="masthead-sub-item">Full-Stack Development</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item">React · Node.js · PostgreSQL</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item">Clean code. Shipped on time.</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item" id="live-time"></span>
+    </div>
+    <nav class="masthead-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BODY GRID -->
+  <div class="page-grid">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-left" aria-label="Profile sidebar">
+
+      <p class="section-label">$ whoami</p>
+      <div class="status-block">
+        <div class="status-line"><span class="status-key">name</span><span class="status-val">Edwin Kimemia</span></div>
+        <div class="status-line"><span class="status-key">role</span><span class="status-val">Software Engineer</span></div>
+        <div class="status-line"><span class="status-key">exp</span><span class="status-val">3 years</span></div>
+        <div class="status-line"><span class="status-key">location</span><span class="status-val">Nairobi, Kenya</span></div>
+        <div class="status-line"><span class="status-key">status</span><span class="status-val available">Open to work</span></div>
+        <div class="status-line"><span class="status-key">type</span><span class="status-val">Full-time / Contract</span></div>
+      </div>
+
+      <p class="section-label">$ npm list --global</p>
+      <div class="skill-group">
+        <p class="skill-group-name">Frontend</p>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Tailwind</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-name">Backend</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-name">Database</p>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-name">Tooling</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">DevTools</span>
+        </div>
+      </div>
+
+      <p class="section-label">$ ping recruiter</p>
+      <div class="cta-block">
+        <p>Three years. Dozens of features shipped. Zero legacy messes left unfixed. If you need someone who reads the PR description, you've found them.</p>
+        <a href="mailto:edwinkimemia05@gmail.com" class="cta-link">Send email</a>
+        <a href="https://linkedin.com/in/edwinkimemia" class="cta-link" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+
+    </aside>
+
+    <div class="col-divider" aria-hidden="true"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="col-right">
+
+      <!-- PROJECTS -->
+      <section class="right-section" id="work" aria-labelledby="projects-heading">
+        <div class="right-section-header">
+          <span class="right-section-num">01</span>
+          <h2 class="right-section-title" id="projects-heading">Selected Work</h2>
+        </div>
+        <div class="project-list">
+
+          <article class="project-item">
+            <span class="project-num">P-01</span>
+            <div class="project-body">
+              <h3 class="project-name">InvoiceKenya</h3>
+              <p class="project-desc">
+                A SaaS invoicing tool built specifically for Kenyan freelancers and small businesses. Supports KES currency, M-Pesa payment links embedded directly in invoices, automatic payment confirmation via Daraja STK Push callbacks, and PDF invoice generation. Clients can pay from the invoice link without logging in.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Daraja API</span>
+                <span class="stack-tag">PDFKit</span>
+                <span class="stack-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo →</a>
+              <a href="#" class="project-link">Code →</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <span class="project-num">P-02</span>
+            <div class="project-body">
+              <h3 class="project-name">ShiftBoard</h3>
+              <p class="project-desc">
+                A staff scheduling and shift management tool for small hospitality businesses (restaurants, hotels, clinics). Managers build weekly rotas on a drag-and-drop calendar. Staff receive WhatsApp notifications via Africa's Talking API when shifts are assigned or changed. Includes a time-off request workflow and basic payroll export.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Africa's Talking API</span>
+                <span class="stack-tag">date-fns</span>
+                <span class="stack-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo →</a>
+              <a href="#" class="project-link">Code →</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <span class="project-num">P-03</span>
+            <div class="project-body">
+              <h3 class="project-name">FormCraft</h3>
+              <p class="project-desc">
+                A no-code form builder that lets non-technical users create embeddable forms with conditional logic, file uploads, and webhook delivery to Zapier or Make.com. Forms render as a single &lt;script&gt; embed tag. Built to replace Typeform for budget-conscious teams.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express</span>
+                <span class="stack-tag">MongoDB</span>
+                <span class="stack-tag">AWS S3</span>
+                <span class="stack-tag">Vanilla JS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo →</a>
+              <a href="#" class="project-link">Code →</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <span class="project-num">P-04</span>
+            <div class="project-body">
+              <h3 class="project-name">StatusPulse</h3>
+              <p class="project-desc">
+                An uptime and status page monitoring SaaS. Users add endpoints, StatusPulse pings them on a configurable interval, logs response times, and auto-generates a public status page (e.g. status.yourapp.com). Sends downtime alerts via email and SMS. Includes a 90-day incident history view.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">BullMQ</span>
+                <span class="stack-tag">Nodemailer</span>
+                <span class="stack-tag">Twilio</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Chart.js</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo →</a>
+              <a href="#" class="project-link">Code →</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <span class="project-num">P-05</span>
+            <div class="project-body">
+              <h3 class="project-name">LearnDesk</h3>
+              <p class="project-desc">
+                A lightweight LMS (Learning Management System) for independent educators and bootcamps. Instructors upload video lessons (stored on Cloudinary), create quizzes, and issue completion certificates. Students pay per course via M-Pesa or Stripe. No monthly platform fee — educators keep 90% of revenue.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Cloudinary</span>
+                <span class="stack-tag">M-Pesa</span>
+                <span class="stack-tag">Stripe</span>
+                <span class="stack-tag">JWT auth</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo →</a>
+              <a href="#" class="project-link">Code →</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span>© 2024 Edwin Kimemia</span>
+    <span>Built with HTML · CSS · JS · No frameworks</span>
+    <span>Nairobi, Kenya</span>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
