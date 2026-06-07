@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Edwin Kimemia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Newsreader:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-muted);
+    }
+    .form-group input, .form-group textarea {
+      background: transparent;
+      border: 1px solid var(--ink);
+      padding: 12px;
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .submit-btn {
+      align-self: flex-start;
+      background: var(--ink);
+      color: var(--bg);
+      border: 1px solid var(--ink);
+      padding: 12px 32px;
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      transition: background 0.1s, color 0.1s;
+    }
+    .submit-btn:hover {
+      background: var(--bg);
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead" role="banner">
+    <div class="masthead-rule"></div>
+    <div class="masthead-inner">
+      <div class="masthead-left">
+        Nairobi, Kenya<br>
+        Available for hire
+      </div>
+      <h1 class="masthead-title">
+        Edwin <span>Kimemia</span>
+      </h1>
+      <div class="masthead-right">
+        Software Engineer<br>
+        3 yrs · Full-Stack
+      </div>
+    </div>
+    <div class="masthead-sub">
+      <span class="masthead-sub-item">Full-Stack Development</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item">React · Node.js · PostgreSQL</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item">Clean code. Shipped on time.</span>
+      <span class="masthead-sub-sep">·</span>
+      <span class="masthead-sub-item" id="live-time"></span>
+    </div>
+    <nav class="masthead-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BODY GRID -->
+  <div class="page-grid">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-left" aria-label="Profile sidebar">
+
+      <p class="section-label">$ whoami</p>
+      <div class="status-block">
+        <div class="status-line"><span class="status-key">name</span><span class="status-val">Edwin Kimemia</span></div>
+        <div class="status-line"><span class="status-key">role</span><span class="status-val">Software Engineer</span></div>
+        <div class="status-line"><span class="status-key">exp</span><span class="status-val">3 years</span></div>
+        <div class="status-line"><span class="status-key">location</span><span class="status-val">Nairobi, Kenya</span></div>
+        <div class="status-line"><span class="status-key">status</span><span class="status-val available">Open to work</span></div>
+        <div class="status-line"><span class="status-key">type</span><span class="status-val">Full-time / Contract</span></div>
+      </div>
+
+      <p class="section-label">$ ping recruiter</p>
+      <div class="cta-block">
+        <p>Typically responds within 24 hours.</p>
+        <p style="font-size: 10px; opacity: 0.8;">Nairobi, Kenya — EAT (UTC+3)</p>
+      </div>
+
+    </aside>
+
+    <div class="col-divider" aria-hidden="true"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="col-right">
+
+      <section class="right-section">
+        <div class="right-section-header">
+          <span class="right-section-num">01</span>
+          <h2 class="right-section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cell">
+            <div class="contact-cell-label">Email</div>
+            <div class="contact-cell-val"><a href="mailto:edwinkimemia05@gmail.com">edwinkimemia05@gmail.com</a></div>
+          </div>
+          <div class="contact-cell">
+            <div class="contact-cell-label">Location</div>
+            <div class="contact-cell-val">Nairobi, Kenya (EAT)</div>
+          </div>
+          <div class="contact-cell">
+            <div class="contact-cell-label">GitHub</div>
+            <div class="contact-cell-val"><a href="https://github.com/edwinkimemia" target="_blank" rel="noopener">github.com/edwinkimemia</a></div>
+          </div>
+          <div class="contact-cell">
+            <div class="contact-cell-label">LinkedIn</div>
+            <div class="contact-cell-val"><a href="https://linkedin.com/in/edwinkimemia" target="_blank" rel="noopener">linkedin.com/in/edwinkimemia</a></div>
+          </div>
+        </div>
+
+        <form action="mailto:edwinkimemia05@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message →</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span>© 2024 Edwin Kimemia</span>
+    <span>Built with HTML · CSS · JS · No frameworks</span>
+    <span>Nairobi, Kenya</span>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

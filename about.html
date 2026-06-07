@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edwin Kimemia — Software Engineer</title>
+  <title>About — Edwin Kimemia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Newsreader:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -37,10 +37,10 @@
     </div>
     <nav class="masthead-nav" aria-label="Main navigation">
       <ul class="nav-list">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="experience.html">Experience</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -100,16 +100,6 @@
         </div>
       </div>
 
-      <p class="section-label">$ cat nav.txt</p>
-      <nav aria-label="Page navigation">
-        <ul class="left-nav">
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://github.com/edwinkimemia" target="_blank" rel="noopener">GitHub ↗</a></li>
-        </ul>
-      </nav>
-
       <p class="section-label">$ ping recruiter</p>
       <div class="cta-block">
         <p>Three years. Dozens of features shipped. Zero legacy messes left unfixed. If you need someone who reads the PR description, you've found them.</p>
@@ -124,35 +114,53 @@
     <!-- MAIN CONTENT -->
     <main class="col-right">
 
-      <!-- Terminal intro -->
-      <div class="terminal-intro" aria-label="Introduction">
-        <div><span class="t-prompt">ek@dev:~$</span> <span class="t-cmd">describe --brief</span></div>
-        <div class="t-output">
-          Software engineer based in Nairobi.<br>
-          Builds web applications that <em>actually work</em> after you deploy them.<br>
-          Comfortable across the stack. Obsessive about edge cases.<br>
-          Three years in — still reads the docs.
+      <section class="right-section">
+        <div class="right-section-header">
+          <span class="right-section-num">01</span>
+          <h2 class="right-section-title">The Background</h2>
         </div>
-        <div style="margin-top:12px">
-          <span class="t-prompt">ek@dev:~$</span>
-          <span class="t-cursor" aria-hidden="true"></span>
+        <div class="terminal-intro" style="border-left: 3px solid var(--ink);">
+          <p style="margin-bottom: 16px;">
+            Edwin Kimemia is a Nairobi-based software engineer with 3 years of experience building production-ready web applications. His unique background as a <strong>former clinical officer</strong> gives him a disciplined, methodical approach to problem-solving and a deep understanding of user needs in high-stakes environments.
+          </p>
+          <p>
+            Edwin specializes in the African market tech ecosystem, with extensive expertise in M-Pesa integrations, mobile-first design, and optimizing for low-bandwidth user experiences. He is passionate about building tools that empower local businesses and freelancers.
+          </p>
         </div>
-      </div>
+      </section>
 
-      <!-- Code snippet -->
-      <div class="code-snippet" aria-label="Code sample">
-        <span class="c-comment">// How I approach every project</span><br>
-        <span class="c-kw">const</span> <span class="c-var">solve</span> = <span class="c-kw">async</span> (<span class="c-var">problem</span>) =&gt; {<br>
-        &nbsp;&nbsp;<span class="c-kw">const</span> <span class="c-var">requirements</span> = <span class="c-kw">await</span> <span class="c-fn">understand</span>(<span class="c-var">problem</span>);<br>
-        &nbsp;&nbsp;<span class="c-kw">const</span> <span class="c-var">plan</span> = <span class="c-fn">breakItDown</span>(<span class="c-var">requirements</span>);<br>
-        &nbsp;&nbsp;<span class="c-kw">const</span> <span class="c-var">result</span> = <span class="c-kw">await</span> <span class="c-fn">ship</span>(<span class="c-var">plan</span>);<br>
-        &nbsp;&nbsp;<span class="c-kw">if</span> (<span class="c-var">result</span>.<span class="c-fn">hasEdgeCases</span>()) <span class="c-fn">fixThem</span>();<br>
-        &nbsp;&nbsp;<span class="c-kw">return</span> <span class="c-var">result</span>; <span class="c-comment">// no loose ends</span><br>
-        };<br>
-        <br>
-        <span class="c-comment">// 3 years. Still the same function.</span>
-      </div>
-
+      <section class="right-section">
+        <div class="right-section-header">
+          <span class="right-section-num">02</span>
+          <h2 class="right-section-title">What I bring</h2>
+        </div>
+        <div class="exp-list">
+          <div class="exp-item" style="grid-template-columns: 1fr;">
+            <div class="exp-role" style="font-size: 18px;">Product Mindset</div>
+            <div class="exp-detail">
+              I don't just write code; I build solutions. Coming from a clinical background, I'm trained to diagnose the root cause of a problem before prescribing a technical solution. I care about the "why" as much as the "how."
+            </div>
+          </div>
+          <div class="exp-item" style="grid-template-columns: 1fr;">
+            <div class="exp-role" style="font-size: 18px;">African Market Expertise</div>
+            <div class="exp-detail">
+              Deeply familiar with the nuances of the Kenyan and broader African tech landscape. I specialize in Daraja API (M-Pesa) integrations, USSD workflows, and building applications that remain performant on 3G networks and entry-level smartphones.
+            </div>
+          </div>
+          <div class="exp-item" style="grid-template-columns: 1fr;">
+            <div class="exp-role" style="font-size: 18px;">Full-Stack Ownership</div>
+            <div class="exp-detail">
+              Comfortable across the entire stack. Whether it's architecting a relational database schema in PostgreSQL, building a responsive UI in React, or configuring a CI/CD pipeline, I take full ownership of the features I ship.
+            </div>
+          </div>
+          <div class="exp-item" style="grid-template-columns: 1fr;">
+            <div class="exp-role" style="font-size: 18px;">Clear Communication</div>
+            <div class="exp-detail">
+              I believe clear documentation and proactive communication are as important as the code itself. I maintain a clean Git history, write descriptive PRs, and can explain technical concepts to non-technical stakeholders.
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
   </div>
